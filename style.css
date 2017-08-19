@@ -4,6 +4,12 @@ html, body {
     height: 100%;
 }
 
+.clearfix::after { 
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .head ul {
     list-style-type: none;
     margin: 0;
@@ -59,6 +65,7 @@ html, body {
 }
 
 .about {
+    clear: left;
     float: left;
     padding: 10px;
     width: 460px; /* I can also use % instead */
@@ -156,11 +163,6 @@ html, body {
     padding: 10px;
  }
 
-.clearfix::after {  /* currently not using */
-    content: "";
-    display: block;
-    clear: both;
-}
 
 /* ----------------------------- contact.html ----------------------------- */
 

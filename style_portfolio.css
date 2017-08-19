@@ -2,6 +2,12 @@ html, body {
     height: 100%;
 }
 
+.clearfix::after { 
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .head ul {
     list-style-type: none;
     margin: 0;
@@ -290,9 +296,3 @@ html, body {
     width: 100%;
     padding: 10px;
  }
-
-.clearfix::after {  /* currently not using */
-    content: "";
-    display: block;
-    clear: both;
-}
